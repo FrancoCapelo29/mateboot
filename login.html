@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATEBOT 👾</title>
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="Images/LOG__OF.png">
+</head>
+<body>
+    <!--SIGN-IN-->
+    <div class="container" id="content01">
+        <div class="img-slider">
+            <h2>Bienvenido a MATEBOT👾</h2>
+            <p>Un lugar para aprender y divertirte</p>
+            <img src="Images/boti.gif" alt="img">
+        </div>
+        <div class="content">
+            <h2>Registrate🤖</h2>
+            <p>Ya tienes una Cuenta ?  <a href="#" id="login">Inicia Sesion </a></p>
+            <form id="form">
+                <label for="name" id="nlabel">Nombre</label> <br>
+                <input type="text" id="fname" placeholder="Lucifer Henry " autocomplete="off"> <br>
+                <label for="email" id="elabel">Correo</label> <br>
+                <input type="email" id="eemail" placeholder="Lucifer@gmail.com" autocomplete="off"> <br>
+                <label for="password" id="plabel">Contraseña</label> <br>
+                <input type="password" name="password" id="lpassword"> <br>
+                <button type="submit"  onclick="UserRegister()" id="btn">Registrarse</button>
+            </form>
+            <div class="other">
+                <h3>O inicia sesion con:</h3>
+                <div class="icons">
+                    <i class='bx bxl-google bx-tada' ></i>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--SIGN-UP-->
+    <div class="container display" id="content02">
+        <div class="img-slider">
+            <h2>Welcome to Flexicom</h2>
+            <p>we are a community together helping thousands of people out there who are struggling </p>
+            <img src="./Images/undraw_mobile_login_ikmv-removebg-preview.png" alt="img" class="sign-img">
+        </div>
+        <div class="content">
+            <h2>Get Started</h2>
+            <p>Don't have account ?  <a href="#" id="sign-up" >Sign up </a></p>
+            <form action="" id="form">
+                <label for="email" id="elabel">Email</label> <br>
+                <input type="email" id="eemail" placeholder="Lucifer@gmail.com" autocomplete="off"> <br>
+                <label for="password" id="plabel">Password</label> <br>
+                <input type="password" name="password" id="lpassword"> <br>
+                <button type="submit" onclick="SignIn()" id="btn1">Log-In </button>
+            </form>
+            <div class="other">
+                <h3>Or Sign up with </h3>
+                <div class="icons">
+                <img src="https://img.icons8.com/bubbles/50/000000/google-logo.png"/>   
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+<script src="data.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="server.js"></script>
+</body>
+</html>
